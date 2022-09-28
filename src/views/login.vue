@@ -14,9 +14,20 @@
                 <a href="https://github.com/Or-Coal"><img src="../assets/img/icon/favicon.ico" alt="哎呀,出错了"></a>
             </div>
         </nav>
-<div class="text_box">
-    <div class="text_left">青山不改 绿水长流 我们来日方长<div class="text_right">----祝大家前程似锦</div></div>
-</div>
+        <div class="text_box">
+            <div class="text_left"><span>青山不改 绿水长流 我们来日方长</span>
+                <div class="text_right">
+                    <div>——祝大家前程似锦</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <footer class="footer">
+            <div>Designed & Powerd by <a href="http://heshicheng.cn/" target="_blank">heshicheng</a></div>
+            <div>Copyright© 2022 贺金</div>
+            <div><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022030877号</a></div>
+        </footer>
     </div>
 </template>
 <script>
@@ -28,27 +39,40 @@ export default {
     background-image: url(../assets/img/bg.jpg);
     height: 100vh;
     background-size: cover;
-    .text_box{
+    width: 98.57vw;
+    overflow-x: hidden;
+    text-align: center;
+
+    .text_box {
         position: relative;
-        padding: 6px;
-        width: 300px;
-        height: 60px;
-        background-color: black;  
-        opacity: 0.4; 
+        padding: 0.4vw;
+        width: 20vw;
+        min-width: 300px;
+        background-color: black;
+        opacity: 0.4;
         color: white;
         top: 60%;
-        left: 40%;
-        .text_right{
-            text-align: right;
+        display: inline-block;
+
+        .text_right {
+            display: inline-block;
+
+            div {
+                background-image: -webkit-linear-gradient(bottom, red, #fd8403, yellow);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
+
     .nav {
         width: 100vw;
         background-color: white;
-        height: 5vh;
+        height: 5.33vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
 
         .nav_left {
             display: flex;
@@ -56,10 +80,12 @@ export default {
         }
 
         .head_img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            margin-left: 5px;
+            width: 2vw;
+            height: 2vw;
+            margin-right: 0.66vw;
+            margin-left: 0.33vw;
+            min-width: 30px;
+            min-height: 30px;
         }
 
         .icons {
@@ -69,10 +95,29 @@ export default {
         }
 
         .icons img {
-            width: 20px;
-            margin-top: 8px;
-            margin-right: 36px;
+            width: 1.33vw;
+            margin-top: 0.53vw;
+            margin-right: 2.4vw;
+            min-width: 20px;
+            min-height: 8px;
         }
+    }
+}
+
+.bottom {
+    position: relative;
+    height: 13vh;
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    .footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      a{
+        text-decoration: none;
+      }
     }
 }
 </style>
