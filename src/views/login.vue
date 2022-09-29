@@ -44,16 +44,14 @@ export default {
     text-align: center;
 
     .text_box {
-        position: relative;
         padding: 0.4vw;
-        width: 20vw;
-        min-width: 300px;
+        width: 18vw;
+        min-width: 246px;
         background-color: black;
         opacity: 0.4;
         color: white;
-        top: 60%;
         display: inline-block;
-
+        margin-top: 68vh;
         .text_right {
             display: inline-block;
 
@@ -73,7 +71,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-
+        
         .nav_left {
             display: flex;
             justify-content: space-between;
