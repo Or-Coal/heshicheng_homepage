@@ -27,6 +27,10 @@
             <div>Designed & Powerd by <a href="http://heshicheng.cn/" target="_blank">heshicheng</a></div>
             <div>Copyright© 2022 贺金</div>
             <div><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022030877号</a></div>
+            <div>
+                <img src="@/assets/img/备案图标.png" alt="备案图标">
+		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37078602370974" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号</p></a>
+		 	</div>
         </footer>
     </div>
 </template>
@@ -39,10 +43,10 @@ export default {
     background-image: url(../assets/img/bg.jpg);
     height: 100vh;
     background-size: cover;
-    width: 98.57vw;
+    width: 98.93vw;
     overflow-x: hidden;
     text-align: center;
-
+    box-sizing: border-box;
     .text_box {
         padding: 0.4vw;
         width: 18vw;
@@ -64,14 +68,13 @@ export default {
     }
 
     .nav {
-        width: 100vw;
+        box-sizing: border-box;
         background-color: white;
         height: 5.33vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        
         .nav_left {
             display: flex;
             justify-content: space-between;
@@ -104,7 +107,7 @@ export default {
 
 .bottom {
     position: relative;
-    height: 13vh;
+    height: 17vh;
     box-sizing: border-box;
     border: none;
     text-align: center;
@@ -115,6 +118,9 @@ export default {
         bottom: 0;
       a{
         text-decoration: none;
+      }
+      div>a{
+        color:#939393;
       }
     }
 }
