@@ -14,13 +14,25 @@
                 <a href="https://github.com/Or-Coal"><img src="../assets/img/icon/favicon.ico" alt="哎呀,出错了"></a>
             </div>
         </nav>
+       <div class="middle">
+        <div class="go_box">
+            <var-space :size="[10, 10]">
+                <var-button loading color="linear-gradient(to right, #fff, #000)" text-color="#fff"
+                    loading-type="rect">
+                    加载状态
+                </var-button>
+                <var-button type="success" color="#000000" style="opacity:1;color: gold;">GO></var-button>
+            </var-space>
+        </div>
         <div class="text_box">
-            <div class="text_left"><span>青山不改 绿水长流 我们来日方长</span>
+            <div class="text_left"><span>青山不改，绿水长流。</span>
                 <div class="text_right">
-                    <div>——祝大家前程似锦</div>
+                    <div>—祝大家前程似锦</div>
                 </div>
             </div>
         </div>
+       </div>
+       
     </div>
     <div class="bottom">
         <footer class="footer">
@@ -29,8 +41,13 @@
             <div><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022030877号</a></div>
             <div>
                 <img src="@/assets/img/备案图标.png" alt="备案图标">
-		 		<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37078602370974" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号</p></a>
-		 	</div>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37078602370974"
+                    style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src=""
+                        style="float:left;" />
+                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号
+                    </p>
+                </a>
+            </div>
         </footer>
     </div>
 </template>
@@ -47,15 +64,35 @@ export default {
     overflow-x: hidden;
     text-align: center;
     box-sizing: border-box;
+.middle{
+    position: relative;
+    text-align: center;
+        display: inline-block;
+}
+    .go_box {
+        background-color:#000;
+        position: absolute;
+        opacity: 0.66;
+        box-shadow: none;
+        border-radius: 2vw;
+        margin-top: 60vh;
+        var-button{
+            width: 20vw;
+            height: 8vw;
+        }
+    }
+
     .text_box {
-        padding: 0.4vw;
-        width: 18vw;
+        padding: 0.5vw;
+        border-radius: 6px;
+        width: 20vw;
         min-width: 246px;
         background-color: black;
         opacity: 0.4;
         color: white;
         display: inline-block;
         margin-top: 68vh;
+
         .text_right {
             display: inline-block;
 
@@ -75,6 +112,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
         .nav_left {
             display: flex;
             justify-content: space-between;
@@ -112,16 +150,19 @@ export default {
     border: none;
     text-align: center;
     line-height: 30px;
+
     .footer {
         width: 100%;
         position: absolute;
         bottom: 0;
-      a{
-        text-decoration: none;
-      }
-      div>a{
-        color:#939393;
-      }
+
+        a {
+            text-decoration: none;
+        }
+
+        div>a {
+            color: #939393;
+        }
     }
 }
 </style>
