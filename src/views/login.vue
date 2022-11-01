@@ -15,7 +15,7 @@
             </div>
         </nav>
        <div class="middle">
-        <div class="go_box">
+        <!-- <div class="go_box">
             <var-space :size="[10, 10]">
                 <var-button loading color="linear-gradient(to right, #fff, #000)" text-color="#fff"
                     loading-type="rect">
@@ -23,11 +23,11 @@
                 </var-button>
                 <var-button type="success" color="#000000" style="opacity:1;color: gold;">GO></var-button>
             </var-space>
-        </div>
+        </div> -->
         <div class="text_box">
             <div class="text_left"><span>青山不改，绿水长流。</span>
                 <div class="text_right">
-                    <div>—祝大家前程似锦</div>
+                    <div>—祝大家前程似锦     > </div>
                 </div>
             </div>
         </div>
@@ -42,9 +42,9 @@
             <div>
                 <img src="@/assets/img/备案图标.png" alt="备案图标">
                 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37078602370974"
-                    style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src=""
+                    style="display:inline-block;text-decoration:none;height:20px;"><img src=""
                         style="float:left;" />
-                    <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号
+                    <p style="float:left;height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号
                     </p>
                 </a>
             </div>
@@ -145,7 +145,7 @@ export default {
 
 .bottom {
     position: relative;
-    height: 17vh;
+    height: 16vh;
     box-sizing: border-box;
     border: none;
     text-align: center;
