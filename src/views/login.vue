@@ -118,6 +118,7 @@ export default {
         .nav_left {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
 
         .head_img {
