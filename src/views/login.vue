@@ -27,7 +27,7 @@
             <div class="text_box">
                 <div class="text_left"><span>青山不改，绿水长流。</span>
                     <div class="text_right">
-                        <div>—祝大家前程似锦 ></div>
+                        <div>—— 祝大家前程似锦 ></div>
                     </div>
                 </div>
             </div>
@@ -36,14 +36,15 @@
     </div>
     <div class="bottom">
         <footer class="footer">
-            <div>Designed & Powerd by <a href="http://heshicheng.cn/" target="_blank">heshicheng</a></div>
+            <div>Designed & Powerd by <a href="http://heshicheng.cn/" target="_blank"
+                    style="color: black;">heshicheng</a></div>
             <div>Copyright© 2022 贺金</div>
-            <div><a href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022030877号</a></div>
+            <div><a href="https://beian.miit.gov.cn/" target="_blank" style="color: black;">鲁ICP备2022030877号</a></div>
             <div>
                 <img style="vertical-align: middle;" src="@/assets/img/备案图标.png" alt="备案图标">
                 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37078602370974"
                     style="display:inline-block;text-decoration:none;height:20px;"><img src="" style="float:left;" />
-                    <p style="float:left;height:20px;margin: 0px 0px 0px 5px; ">鲁公网安备 37078602370974号
+                    <p style="float:left;height:20px;margin: 0px 0px 0px 5px;color: black; ">鲁公网安备 37078602370974号
                     </p>
                 </a>
             </div>
@@ -158,6 +159,7 @@ export default {
         width: 100%;
         position: absolute;
         bottom: 0;
+        color: black;
 
         a {
             text-decoration: none;
